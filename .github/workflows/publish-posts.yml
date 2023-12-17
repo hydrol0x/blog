@@ -38,3 +38,12 @@ jobs:
           
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update HTML files
+          title: 'Update HTML files'
+          body: 'This PR updates HTML files generated from Markdown.'
+          branch: update-html-files
+          delete-branch: true
+          labels: |
+            update
