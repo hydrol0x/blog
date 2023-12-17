@@ -1,0 +1,3 @@
+[submodule "static-site-generator-repo"]
+    path = static-site-generator-repo
+    url = https://github.com/hydrol0x/static-site-generator.git
