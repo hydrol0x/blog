@@ -30,7 +30,11 @@ jobs:
           pip install marko
 
       - name: Convert Markdown to HTML
-        run: python ../static-site-generator-repo/static-site-generator.py
+        run: python static-site-generator-repo/static-site-generator.py
+
+      - name: Debug
+        run: |
+          ls -a
 
       - name: Commit and Push Changes
         run: |
