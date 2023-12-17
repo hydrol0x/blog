@@ -35,12 +35,6 @@ jobs:
       - name: Debug
         run: |
           ls -a
-
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name 'Jacob R'
-          git config --global user.email 'mrjacobry@gmail.com'
-          git add dist/*
-          git commit -m "Convert Markdown to HTML"
-          git push
-        shell: bash
+          
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
