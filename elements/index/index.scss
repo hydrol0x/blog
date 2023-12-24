@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Concert+One&family=Noto+Serif+Makasar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;0,800;1,400&family=Noto+Serif&display=swap");
+body {
+  background-color: rgb(234, 231, 229);
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.content {
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+@mixin text-shadow($length: 1500, $gradColors: null) {
+  $shadows: ();
+
+  @for $i from 1 through $length {
+    $offset: #{$i}px;
+    $color: null;
+
+    @if $i < 10 {
+      $color: nth($gradColors, 1);
+    } @else if $i < 40 {
+      $color: nth($gradColors, 2);
+    } @else if $i < 90 {
+      $color: nth($gradColors, 3);
+    } @else if $i < 200 {
+      $color: nth($gradColors, 4);
+    } @else if $i < 350 {
+      $color: nth($gradColors, 5);
+    } @else {
+      $color: nth($gradColors, 5);
+    }
+
+    $shadows: append($shadows, 1px #{$offset} 0 unquote($color), comma);
+  }
+
+  text-shadow: $shadows;
+}
+
+$gradColors: ("#e5efff", "#abc3ed", "#4b689b", "#394860", "#29313D");
+
+.grad-shadow-heading {
+  padding: 0;
+  margin: 0;
+  font-size: 5.5vw;
+  font-family: "Caprasimo", serif;
+  color: hsl(214, 88%, 9%);
+  max-width: 60rem;
+  letter-spacing: 2px;
+  overflow-wrap: anywhere;
+
+  @media (max-width: 650px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 5vw;
+  }
+
+  @media (min-width: 909px) {
+    font-size: 5.5vw;
+  }
+
+  @media (min-width: 1700px) {
+    font-size: 93.5px;
+  }
+
+  @include text-shadow(
+    1500,
+    $gradColors
+  ); // Pass the desired length and gradColors array here
+}
