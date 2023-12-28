@@ -1,0 +1,116 @@
+/* adapted from https://github.com/munificent/game-programming-patterns/blob/master/html/style.css */
+
+.md-content {
+  max-width: 80%; /* Utilizing more of the viewport width */
+  margin: 20px auto; /* Centering the content */
+  padding: 20px;
+  padding-bottom: 20em;
+  background: none; /* Removing the white background */
+  line-height: 1.6;
+  color: black;
+  font: normal 16px/1.6 "Noto Serif", sans-serif;
+}
+
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4 {
+  margin: 20px 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  color: hsl(219, 15%, 50%);
+}
+
+.md-content h1 {
+  font-size: 3em;
+  color: hsl(219, 35%, 25%);
+}
+
+.md-content h2 {
+  font-size: 2em;
+  color: #4b679b;
+}
+
+.md-content h3 {
+  font-size: 1.75em;
+}
+
+.md-content h4 {
+  font-size: 1.25em;
+}
+
+.md-content p {
+  font-size: large;
+}
+
+.md-content p,
+.md-content ul,
+.md-content ol {
+  margin: 15px 0;
+}
+
+.md-content a {
+  color: #1481b8;
+  text-decoration: none;
+  border-bottom: solid 1px rgba(209, 236, 250, 0);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.md-content a:hover {
+  border-bottom: solid 1px #d1ecfa;
+}
+
+.md-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.md-content blockquote {
+  padding: 10px;
+  background: #f9fafb;
+  border: solid 1px #f3f5f7;
+  border-bottom: solid 1px #dee8ed;
+  border-radius: 3px;
+  margin: 20px 0;
+}
+
+.md-content blockquote p {
+  font: italic 14px/24px "Merriweather", Georgia, serif;
+  color: #73848c;
+}
+
+.md-content code {
+  color: #526d7a;
+  font-family: "Source Code Pro", Menlo, Consolas, Monaco, monospace;
+}
+
+.md-content pre {
+  color: #444;
+  font: normal 13px/16px "Source Code Pro", Menlo, Consolas, Monaco, monospace;
+  padding: 10px;
+  background: #f8fbfc;
+  border: solid 1px #f1f6f9;
+  border-bottom: solid 1px #d9eaf2;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .md-content {
+    max-width: 95%; /* More width for smaller screens */
+    padding: 10px;
+  }
+
+  .md-content h1 {
+    font-size: 2em;
+  }
+
+  .md-content h2 {
+    font-size: 1.7em;
+  }
+
+  .md-content h3 {
+    font-size: 1.4em;
+  }
+}
