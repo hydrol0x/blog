@@ -1,0 +1,58 @@
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+div.footerbar_wrapper {
+  background-color: none;
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+ul.footerbar {
+  position: absolute;
+  bottom: 3%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: none;
+  width: 100%;
+}
+
+ul.footerbar li {
+  float: right;
+  margin-right: 50px;
+}
+
+ul.footerbar li a {
+  display: block;
+  padding: 14px 16px;
+  transition: filter 200ms;
+}
+
+ul.footerbar li a:hover {
+  filter: brightness(0.5);
+}
+
+div.end-flexbox {
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+}
+
+div.copyright {
+  position: relative;
+  width: 20%;
+}
+
+div.copyright p {
+  position: absolute;
+  bottom: 3%;
+}
+.section6 {
+  color: #1b4757;
+  height: 50vh;
+  background-color: #000814;
+  overflow: hidden;
+}
