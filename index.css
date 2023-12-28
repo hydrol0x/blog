@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Concert+One&family=Noto+Serif+Makasar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;0,800;1,400&family=Noto+Serif&display=swap");
 body {
-  background-color: #eae7e5;
+  background-color: #f4f3f2;
+  background-color: #ffff;
   padding: 0;
   margin: 0; }
 
@@ -15,11 +16,31 @@ body {
   margin-left: 2rem; }
 
 .content {
+  height: 100vh;
   padding: 1rem;
   margin-top: 2rem;
   margin-left: 3rem; }
 
+.content li {
+  padding: 1em; }
+
+.content li {
+  list-style-type: none; }
+
+.content a {
+  font-size: 2em;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: underline;
+  color: black;
+  transition: all 0.2s; }
+
+.content a:hover {
+  color: #49679a;
+  font-size: 2.2em; }
+
 .grad-shadow-heading {
+  position: relative;
+  z-index: 1;
   padding: 0;
   margin: 0;
   font-size: 5.5vw;
@@ -45,75 +66,6 @@ body {
 
 /* ---Navbar--- */
 
-/* .navbar_wrapper {
-  background-color: transparent;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding: 5px;
-}
-
-a {
-  height: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.logo {
-  padding: 2px;
-  margin: 0;
-}
-
-.logoLink {
-  padding: 0 !important;
-  margin: 0 !important;
-  background-color: red;
-}
-
-.logoImg {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 5px;
-  overflow: hidden;
-  border-bottom: 3px solid #003566;
-  background-color: transparent;
-  width: 100%;
-  font-size: large;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 600;
-}
-
-ul.navbar li {
-  background-color: transparent;
-  float: right;
-  margin-right: 0.8em;
-}
-
-.logo {
-  float: left !important;
-}
-
-ul.navbar li a {
-  display: block;
-  color: #000;
-  padding: 10px;
-  text-decoration: underline 0.05em #000814;
-  text-underline-offset: 0.2em;
-  transition: text-decoration-color 300ms, text-underline-offset 300ms,
-    transform 0.2s ease-in-out;
-}
-
-ul.navbar li a:hover {
-  color: #003566;
-  text-decoration-color: #003566;
-  transform: translate(-5%, -5%);
-  text-underline-offset: 0.3em;
-} */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&display=swap");
 div.navbar_wrapper {
   background-color: transparent;
@@ -160,4 +112,66 @@ ul.navbar li a:hover {
   text-decoration-color: #003566;
   transform: translate(-5%, -5%);
   text-underline-offset: 0.3em;
+}
+
+
+/* ---Footer--- */
+
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+div.footerbar_wrapper {
+  background-color: none;
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+ul.footerbar {
+  position: absolute;
+  bottom: 3%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: none;
+  width: 100%;
+}
+
+ul.footerbar li {
+  float: right;
+  margin-right: 50px;
+}
+
+ul.footerbar li a {
+  display: block;
+  padding: 14px 16px;
+  transition: filter 200ms;
+}
+
+ul.footerbar li a:hover {
+  filter: brightness(0.5);
+}
+
+div.end-flexbox {
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+}
+
+div.copyright {
+  position: relative;
+  width: 20%;
+}
+
+div.copyright p {
+  position: absolute;
+  bottom: 3%;
+}
+.section6 {
+  color: #1b4757;
+  height: 50vh;
+  background-color: #000814;
+  overflow: hidden;
 }
