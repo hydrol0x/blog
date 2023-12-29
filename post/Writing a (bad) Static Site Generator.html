@@ -30,7 +30,7 @@
 </div>
 </header><section class="md-content"><h1>Writing a (bad) Static Site Generator</h1>
 <h5><em>December 2023</em></h5>
-<p><img src="https://github.com/hydrol0x/blog/assets/34951139/46c06e9c-92a6-4aeb-acc2-d920182371b6" alt="A robot builds up an html page" width=750></p>
+<p><img src="https://github.com/hydrol0x/blog/assets/34951139/46c06e9c-92a6-4aeb-acc2-d920182371b6" alt="A robot builds up an html page" width=850></p>
 <h2>Hello World!</h2>
 <p>To create this blog I spent a few minutes looking up existing tools, but after getting lazy I decided to just write a quick script on my own. As always, it would definitely have been quicker to read up on some existing generator like <a href="https://jekyllrb.com/">Jekyll</a> (ironically, Github pages already uses it when hosting this website) and it would also have been less janky— but then I wouldn't learn as much!</p>
 <p>If you're already familiar with static sites, html, markdown, etc., you can skip to <a href="#technical">the technical details of my generator</a></p>
@@ -48,10 +48,10 @@
 <p>On the other hand of the spectrum, there are websites like Medium and Substack that let you write in an appealing online GUI where you can see how your post will look while writing. Though nice, that goes beyond the territory of a static site generator or my skillset/time, so I decided on a middle ground.</p>
 <h3>Markdown</h3>
 <p>Those nice GUIs often employ text entry using <code>Markdown</code>, a simple markup language that is easy to read, write, and parse into viewable content. The static site generator I built takes in these markdown files and converts them into HTML pages (with CSS styling) that follow the structure of the original. The benefit of writing markdown over raw HTML is that the base file is already human readable and so it's much easier to write. For example, a sample heading and paragraph might look like</p>
-<p>```</p>
-<h1>Heading</h1>
-<p>To create this blog I spent a few minutes looking up existing tools, but after getting lazy I decided to just write a quick script on my ow- wait this is just this post!
-```</p>
+<pre><code># Heading
+
+To create this blog I spent a few minutes looking up existing tools, but after getting lazy I decided to just write a quick script on my ow- wait this is just this post!
+</code></pre>
 <p>Which is much nicer on the eye than a soup of HTML tags.</p>
 <h3>Markdown ➡ HTML</h3>
 <p>Now that we understand the starting point (a markdown document) and endpoint (an HTML page the browser understands) it is easy to see what the static site generator <em>should</em> do. Namely, get us from point <strong>A</strong> to <strong>B</strong>, markdown to HTML.</p>
