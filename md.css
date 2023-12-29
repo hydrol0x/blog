@@ -1,7 +1,7 @@
 /* adapted from https://github.com/munificent/game-programming-patterns/blob/master/html/style.css */
 
 .md-content {
-  max-width: 80%; /* Utilizing more of the viewport width */
+  max-width: 70%; /* Utilizing more of the viewport width */
   margin: 20px auto; /* Centering the content */
   padding: 20px;
   padding-bottom: 20em;
@@ -9,6 +9,12 @@
   line-height: 1.6;
   color: black;
   font: normal 16px/1.6 "Noto Serif", sans-serif;
+}
+
+@media (min-width: 1700px) {
+  .md-content {
+    max-width: 50%;
+  }
 }
 
 .md-content h1,
