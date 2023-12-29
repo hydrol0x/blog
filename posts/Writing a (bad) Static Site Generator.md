@@ -73,6 +73,8 @@ Right now, these elements are stored in a [directory](https://github.com/hydrol0
 
 The components are inserted into the [newly generated blog post](https://github.com/hydrol0x/static-site-generator/blob/680a0ea707606e44924739d40aa638d54b6cd858/static-site-generator.py#L63C24-L63C24) HTML files [as well as](https://github.com/hydrol0x/static-site-generator/blob/680a0ea707606e44924739d40aa638d54b6cd858/static-site-generator.py#L99C22-L99C22) the `index.html` file serving as the blog's homepage using the `BeautifulSoup4` library, which lets me parse the HTML tags and insert or append directly into the `body`/a list/etc.
 
+The last step is to actually deploy the pages and host them somewhere. Since I'm already uploading everything to Github, I decided to host off of Github pages (also because it's free). I created a [Github workflow](https://github.com/hydrol0x/blog/blob/34186b71185152efea0cba6188fd40dbe5b9ff6e/.github/workflows/publish-posts.yml) that runs the static site generator script every time I push to the `posts` folder, in other words, every time there is a new post. Once the conversion is done, the workflow creates a new branch and pull request that I can then merge in to update the website.
+
 ### Bespoke all the way down
 
 <img src="https://github.com/hydrol0x/blog/assets/34951139/b6a9deab-4551-4853-8d13-7a3fa834e4f2" alt="sphagetti code" width=500>
