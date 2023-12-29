@@ -2,7 +2,7 @@
 
 ##### _December 2023_
 
-<img src="https://github.com/hydrol0x/blog/assets/34951139/46c06e9c-92a6-4aeb-acc2-d920182371b6" alt="A robot builds up an html page" width=750>
+<img src="https://github.com/hydrol0x/blog/assets/34951139/46c06e9c-92a6-4aeb-acc2-d920182371b6" alt="A robot builds up an html page" width=850>
 
 ## Hello World!
 
@@ -38,11 +38,9 @@ On the other hand of the spectrum, there are websites like Medium and Substack t
 
 Those nice GUIs often employ text entry using `Markdown`, a simple markup language that is easy to read, write, and parse into viewable content. The static site generator I built takes in these markdown files and converts them into HTML pages (with CSS styling) that follow the structure of the original. The benefit of writing markdown over raw HTML is that the base file is already human readable and so it's much easier to write. For example, a sample heading and paragraph might look like
 
-```
-# Heading
+    # Heading
 
-To create this blog I spent a few minutes looking up existing tools, but after getting lazy I decided to just write a quick script on my ow- wait this is just this post!
-```
+    To create this blog I spent a few minutes looking up existing tools, but after getting lazy I decided to just write a quick script on my ow- wait this is just this post!
 
 Which is much nicer on the eye than a soup of HTML tags.
 
