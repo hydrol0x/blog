@@ -8,7 +8,7 @@
 
 To create this blog I spent a few minutes looking up existing tools, but after getting lazy I decided to just write a quick script on my own. As always, it would definitely have been quicker to read up on some existing generator like [Jekyll](https://jekyllrb.com/) (ironically, Github pages already uses it when hosting this website) and it would also have been less janky— but then I wouldn't learn as much!
 
-If you're already familiar with static sites, html, markdown, etc., you can skip to [the technical details of my generator](#technical-details-and-implementation)
+If you're already familiar with static sites, html, markdown, etc., you can skip to [the technical details of my generator](#technical)
 
 ## What Is a Static Site?
 
@@ -58,7 +58,7 @@ Converting the markdown source file into HTML that the browser can understand is
 4. Creates a homepage with the new post links added
 5. Generates a CSS file that contains the styling for the posts themselves and any other elements
 
-## Technical Details and Implementation
+## <a name="technical"></a>Technical Details and Implementation
 
 I used Python for the generator since anything else seems overkill. My script roughly follows the steps outlined above.
 
