@@ -2,7 +2,7 @@
 
 ##### _December 2023_
 
-<img src="https://github.com/hydrol0x/blog/assets/34951139/46c06e9c-92a6-4aeb-acc2-d920182371b6" alt="A robot builds up an html page" width=850>
+<img src="https://github.com/hydrol0x/blog/assets/34951139/46c06e9c-92a6-4aeb-acc2-d920182371b6" alt="A robot builds up an html page." width=850>
 
 ## Hello World!
 
